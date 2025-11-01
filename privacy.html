@@ -1,92 +1,202 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skylta — Privacy Policy</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.7;margin:0;background:#0f172a;color:#e5e7eb}
-    header{background:#111827;padding:32px 16px;text-align:center}
-    header h1{margin:0;font-size:28px}
-    main{max-width:900px;margin:24px auto;padding:0 16px}
-    .card{background:#111827;border:1px solid #374151;border-radius:16px;padding:20px;margin:12px 0}
-    h2{margin-top:0}
-    a{color:#93c5fd;text-decoration:none}
-    a:hover{text-decoration:underline}
-    footer{font-size:12px;opacity:.8;text-align:center;margin:24px 0}
-    .small{font-size:13px;opacity:.9}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skylta — Privacy Policy</title>
+<style>
+  :root{--bg:#0f172a;--card:#111827;--muted:#9ca3af;--text:#e5e7eb;--border:#374151}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.7;margin:0;background:var(--bg);color:var(--text)}
+  header{background:var(--card);padding:28px 16px;text-align:center;border-bottom:1px solid var(--border)}
+  header h1{margin:0;font-size:26px}
+  main{max-width:920px;margin:24px auto;padding:0 16px}
+  .tabs{display:flex;gap:8px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+  .tab{background:transparent;border:1px solid var(--border);color:var(--text);padding:8px 12px;border-radius:999px;cursor:pointer}
+  .tab.active{background:#1f2937}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;margin:12px 0}
+  .small{font-size:13px;color:var(--muted)}
+  a{color:#93c5fd;text-decoration:none} a:hover{text-decoration:underline}
+  h2{margin-top:0}
+  footer{font-size:12px;opacity:.8;text-align:center;margin:24px 0}
+  [hidden]{display:none!important}
+</style>
 </head>
 <body>
 <header>
-  <h1>Skylta — Privacy Policy • سياسة الخصوصية • Integritetspolicy</h1>
+  <h1>Skylta — Privacy Policy • Integritetspolicy • سياسة الخصوصية</h1>
 </header>
 
 <main>
-  <section class="card">
-    <p class="small"><em>Last updated: 20 Sep 2025</em></p>
-    <h2>Summary</h2>
-    <ul>
-      <li>No account required. We don’t collect names, emails, or phone numbers.</li>
-      <li>The app works offline (Flashcards & Puzzle). AI recognition uses the camera on-device only; images are not uploaded.</li>
-      <li>Advertising: We use Google AdMob. Ad networks may collect device identifiers and approximate location for ad measurement and fraud prevention.</li>
-      <li>Diagnostics: We may use crash logs and basic analytics to improve stability.</li>
-    </ul>
+  <div class="tabs">
+    <button class="tab active" data-lang="en">English</button>
+    <button class="tab" data-lang="sv">Svenska</button>
+    <button class="tab" data-lang="ar">العربية</button>
+  </div>
+
+  <!-- EN -->
+  <section class="lang lang-en">
+    <div class="card small"><em>Last updated: 1 Nov 2025</em></div>
+
+    <div class="card">
+      <h2>Summary</h2>
+      <ul>
+        <li>No account is required. We don’t collect names, emails, or phone numbers.</li>
+        <li>Flashcards & Puzzle work offline. The AI recogniser runs on-device; images are not uploaded.</li>
+        <li>Advertising: we use <a href="https://policies.google.com/technologies/ads">Google AdMob</a>. Ad networks may use the device identifier (IDFA) and approximate location (derived from IP) for ad measurement, personalization (if you allow tracking), and fraud prevention.</li>
+        <li>Diagnostics: we may use crash logs and basic performance data to improve stability.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Data We Collect</h2>
+      <h3>Automatically</h3>
+      <ul>
+        <li><strong>Advertising data</strong> via AdMob: device identifier (IDFA), ad impressions, general engagement; approximate location may be inferred.</li>
+        <li><strong>Diagnostics</strong>: crash logs and performance data (via Apple and/or Firebase Crashlytics, if enabled).</li>
+      </ul>
+      <p><strong>Not collected in-app:</strong> your name, email, photos, precise location. If you email support, we only see what you send.</p>
+    </div>
+
+    <div class="card">
+      <h2>How We Use Data</h2>
+      <ul>
+        <li>Provide core features (save language/settings locally on your device).</li>
+        <li>Show and measure low-frequency ads.</li>
+        <li>Fix bugs and improve performance.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Tracking (ATT)</h2>
+      <p>On iOS, we ask for permission to use your device identifier (IDFA) for personalized ads. If you tap “Allow”, ads may be personalized; if you choose “Ask App Not to Track”, you will still see non-personalized ads. You can change this anytime in <em>Settings → Privacy &amp; Security → Tracking</em>.</p>
+      <p class="small"><strong>NSUserTrackingUsageDescription</strong>: “We use your device identifier to show relevant ads and keep Skylta free. You can change this anytime in Settings.”</p>
+    </div>
+
+    <div class="card">
+      <h2>Sharing</h2>
+      <p>We do not sell personal data. Limited data is shared with processors strictly to deliver the app: Google (AdMob, Crashlytics) and Apple (crash reporting).</p>
+    </div>
+
+    <div class="card">
+      <h2>Security & Retention</h2>
+      <p>Most data stays on your device. Crash/ads telemetry is retained by providers for limited periods per their policies. Support emails may be kept up to 24 months then deleted.</p>
+    </div>
+
+    <div class="card">
+      <h2>Children</h2>
+      <p>Skylta is not directed to children under 13 and does not knowingly collect their data.</p>
+    </div>
+
+    <div class="card">
+      <h2>Your Rights (GDPR)</h2>
+      <p>If you are in the EU/EEA, you have rights to access, delete, or object to processing. Contact us and we will assist, including contacting our processors. You may also complain to IMY (Integritetsskyddsmyndigheten) in Sweden.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:zaidcolab@gmail.com">zaidcolab@gmail.com</a></p>
+    </div>
+
+    <div class="card small">
+      <h2>Apple “App Privacy” Mapping</h2>
+      <ul>
+        <li><strong>Data Used to Track You</strong>: Identifiers (Device ID/IDFA). <em>(Add Approximate Location if you enable it for ads.)</em></li>
+        <li><strong>Data Not Linked to You</strong>: Usage Data (Advertising data), Diagnostics (Crash data & Performance).</li>
+        <li><strong>Data Linked to You</strong>: None collected in-app.</li>
+      </ul>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>Data We Collect</h2>
-    <h3>Directly from you</h3>
-    <p>When you contact support, we receive your message and email address.</p>
+  <!-- SV -->
+  <section class="lang lang-sv" hidden>
+    <div class="card small"><em>Senast uppdaterad: 1 nov 2025</em></div>
 
-    <h3>Automatically</h3>
-    <ul>
-      <li><strong>Advertising data</strong> via <a href="https://policies.google.com/technologies/ads">Google AdMob</a> (device identifiers, ad impressions, performance).</li>
-      <li><strong>Diagnostics</strong> such as crash logs and app performance (via Apple or Firebase Crashlytics if enabled).</li>
-    </ul>
+    <div class="card">
+      <h2>Sammanfattning</h2>
+      <ul>
+        <li>Inget konto krävs. Vi samlar inte in namn, e-post eller telefonnummer.</li>
+        <li>Flashcards & pussel fungerar offline. AI-igenkänning körs på enheten; bilder laddas inte upp.</li>
+        <li>Annonsning: vi använder <a href="https://policies.google.com/technologies/ads">Google AdMob</a>. Nätverk kan använda enhetens identifierare (IDFA) och ungefärlig plats för mätning, personalisering (om du tillåter spårning) och bedrägeriskydd.</li>
+        <li>Diagnostik: kraschloggar och prestandadata för att förbättra stabiliteten.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Vilka uppgifter</h2>
+      <ul>
+        <li><strong>Annonsdata</strong> via AdMob: IDFA, annonsvisningar, engagemang; ungefärlig plats kan härledas.</li>
+        <li><strong>Diagnostik</strong>: kraschloggar och prestanda (Apple och/eller Crashlytics).</li>
+      </ul>
+      <p><strong>Inte insamlat i appen:</strong> namn, e-post, foton, exakt plats. Vid kontakt med support ser vi bara det du skickar.</p>
+    </div>
+
+    <div class="card">
+      <h2>Spårning (ATT)</h2>
+      <p>Vi kan be om tillstånd att använda IDFA för personliga annonser. “Tillåt” → personliga annonser; “Be appen att inte spåra” → icke-personliga annonser. Ändra i <em>Inställningar → Integritet → Spårning</em>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Dina rättigheter (GDPR)</h2>
+      <p>Du kan begära tillgång/radering eller invända. Kontakta oss eller IMY.</p>
+    </div>
+
+    <div class="card">
+      <h2>Kontakt</h2>
+      <p>E-post: <a href="mailto:zaidcolab@gmail.com">zaidcolab@gmail.com</a></p>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>How We Use Data</h2>
-    <ul>
-      <li>To provide core features (e.g., remembering language and settings locally on your device).</li>
-      <li>To show low‑frequency ads and measure their performance.</li>
-      <li>To fix bugs and improve the app.</li>
-    </ul>
-  </section>
+  <!-- AR -->
+  <section class="lang lang-ar" hidden dir="rtl">
+    <div class="card small"><em>آخر تحديث: 1 نوفمبر 2025</em></div>
 
-  <section class="card">
-    <h2>Sharing</h2>
-    <p>We do not sell personal data. Limited data is shared with service providers strictly to deliver the app (e.g., Google AdMob; Apple for crash reporting).</p>
-  </section>
+    <div class="card">
+      <h2>الخلاصة</h2>
+      <ul>
+        <li>لا يحتاج التطبيق إلى حساب. لا نجمع الاسم أو البريد أو رقم الهاتف.</li>
+        <li>الفلاش كارد والبازل يعملان بدون إنترنت. التعرف بالذكاء الاصطناعي يتم على الجهاز ولا نرفع الصور.</li>
+        <li>الإعلانات: نستخدم <a href="https://policies.google.com/technologies/ads">Google AdMob</a>. قد تستخدم الشبكات معرّف الجهاز (IDFA) وموقعًا تقريبيًا لقياس الإعلانات وتخصيصها (إذا وافقت على التتبّع) ومنع الاحتيال.</li>
+        <li>التشخيص: قد نستخدم سجلات الأعطال وبيانات الأداء لتحسين الاستقرار.</li>
+      </ul>
+    </div>
 
-  <section class="card">
-    <h2>Your Choices</h2>
-    <ul>
-      <li>You can remove ads by purchasing Premium (if available).</li>
-      <li>You can contact us to delete support emails you sent.</li>
-    </ul>
-  </section>
+    <div class="card">
+      <h2>البيانات التي نجمعها</h2>
+      <ul>
+        <li><strong>بيانات الإعلانات</strong> عبر AdMob: معرّف الجهاز، مرات ظهور الإعلان، التفاعل؛ وقد يُستدل على موقع تقريبي.</li>
+        <li><strong>التشخيص</strong>: سجلات الأعطال وبيانات الأداء (عبر Apple و/أو Crashlytics).</li>
+      </ul>
+      <p><strong>غير مُجمّع داخل التطبيق:</strong> الاسم والبريد والصور والموقع الدقيق. عند مراسلة الدعم نرى فقط ما ترسله.</p>
+    </div>
 
-  <section class="card">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:zaidcolab@gmail.com">zaidcolab@gmail.com</a></p>
-  </section>
+    <div class="card">
+      <h2>التتبّع (ATT)</h2>
+      <p>على iOS قد نطلب إذن استخدام معرّف جهازك لعرض إعلانات مخصّصة. عند الرفض ستظهر إعلانات غير مخصّصة ويمكنك تغيير الخيار من الإعدادات &rarr; الخصوصية &rarr; التتبّع.</p>
+    </div>
 
-  <section class="card small">
-    <h2>Apple “App Privacy” Disclosure Mapping</h2>
-    <ul>
-      <li>Data Used for Tracking: <strong>Yes</strong> (Ad ID for advertising).</li>
-      <li>Data Linked to You: <strong>No</strong>.</li>
-      <li>Data Not Linked to You: <strong>Identifiers</strong> (for ads), <strong>Usage Data</strong> (ad performance), <strong>Diagnostics</strong> (crash logs).</li>
-    </ul>
-    <p>Edit this section to reflect your final integrations (e.g., if you enable Firebase Analytics or Remote Config).</p>
+    <div class="card">
+      <h2>حقوقك (GDPR)</h2>
+      <p>لديك حقوق الوصول والحذف والاعتراض. راسلنا وسنساعدك، ويمكنك الشكوى إلى هيئة حماية الخصوصية السويدية IMY.</p>
+    </div>
+
+    <div class="card">
+      <h2>التواصل</h2>
+      <p>البريد: <a href="mailto:zaidcolab@gmail.com">zaidcolab@gmail.com</a></p>
+    </div>
   </section>
 </main>
 
-<footer>
-  © 2025 Skylta. All rights reserved.
-</footer>
+<footer>© 2025 Skylta</footer>
+
+<script>
+  const tabs=[...document.querySelectorAll('.tab')];
+  const langs={en:'.lang-en',sv:'.lang-sv',ar:'.lang-ar'};
+  tabs.forEach(t=>t.onclick=()=>{
+    tabs.forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+    Object.values(langs).forEach(sel=>document.querySelector(sel).hidden=true);
+    document.querySelector(langs[t.dataset.lang]).hidden=false;
+  });
+</script>
 </body>
 </html>
